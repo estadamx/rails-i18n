@@ -140,7 +140,7 @@ af:
         one: is die verkeerde lengte (moet %{count} karakter wees)
         other: is die verkeerde lengte (moet %{count} karakters wees)
     template:
-      body: 'There were problems with the following fields:'
+      body: 'Daar was probleme met die volgende:'
       header:
         one: "%{count} fout het verhoed dat hierdie %{model} gestoor kon word"
         other: "%{count} foute het verhoed dat hierdie %{model} gestoor kon word"
