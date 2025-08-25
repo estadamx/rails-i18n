@@ -11,28 +11,9 @@ Centralization of locale data collection for Ruby on Rails.
 Include the gem to your Gemfile:
 
 ``` ruby
-gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For bleeding edge unreleased versions
-gem 'rails-i18n', '~> 8.0.0' # For Rails >= 8.0.0
-gem 'rails-i18n', '~> 7.0.0' # For Rails >= 7.0.0
-gem 'rails-i18n', '~> 6.0' # For 6.x
-gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
-gem 'rails-i18n', '~> 4.0' # For 4.0.x
-gem 'rails-i18n', '~> 3.0' # For 3.x
-gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-5-x' # For 5.x
-gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
-gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-3-x' # For 3.x
+gem 'rails-i18n', github: 'estadamx/rails-i18n', tag: '8.0.2'
 ```
 
-Alternatively, execute the following command:
-
-``` shell
-gem install rails-i18n -v '~> 8.0.0' # For Rails >= 8.0.0
-gem install rails-i18n -v '~> 7.0.0' # For Rails >= 7.0.0
-gem install rails-i18n -v '~> 6.0' # For 6.x
-gem install rails-i18n -v '~> 5.1' # For  For 5.0.x, 5.1.x and 5.2.x
-gem install rails-i18n -v '~> 4.0' # For 4.0.x
-gem install rails-i18n -v '~> 3.0' # For 3.x
-```
 
 Note that your Ruby on Rails version must be 3.0 or higher in order to install the `rails-i18n` gem. For rails 2.x, install it manually as described in the Manual Installation section below.
 
@@ -77,15 +58,12 @@ config.i18n.available_locales = :nl
 
 ## Manual Installation
 
-Download desired locale files found in [rails/locale](http://github.com/svenfuchs/rails-i18n/tree/master/rails/locale/) directory and move them into the `config/locales` directory of your Rails application.
+Download desired locale files found in [rails/locale](http://github.com/estadamx/rails-i18n/tree/master/rails/locale/) directory and move them into the `config/locales` directory of your Rails application.
 
 If any translation doesn't suit well to the requirements of your application, edit them or add your own locale files.
 
 For more information, visit [Rails Internationalization (I18n) API](http://guides.rubyonrails.org/i18n.html) on the _RailsGuides._
 
-## Usage on Rails 2.3
-
-Locale data whose structure is compatible with Rails 2.3 are available on the separate branch [rails-2-3](https://github.com/svenfuchs/rails-i18n/tree/rails-2-3).
 
 ## Available Locales
 
@@ -147,15 +125,10 @@ tr:
 
 If you are familiar with GitHub operations, then follow the procedures described in the subsequent sections.
 
-If not,
-
-* Save your locale data in a [Gist](http://gist.github.com).
-* Open an issue with reference to the Gist you created.
-
 ### Fetching the `rails-i18n` Repository
 
 * Get a github account and Git program if you haven't. See [Help.Github](http://help.github.com/) for instructions.
-* Fork `svenfuchs/rails-i18n` repository and clone it into your PC.
+* Fork `estadamx/rails-i18n` repository and clone it into your PC.
 
 ### Creating or Editing your Locale File
 
@@ -265,12 +238,9 @@ docker run railsi18n bundle exec rake i18n-spec:completeness rails/locale/en.yml
 
 ## License
 
-[MIT](https://github.com/svenfuchs/rails-i18n/blob/master/MIT-LICENSE.txt)
+[MIT](https://github.com/estadamx/rails-i18n/blob/master/MIT-LICENSE.txt)
 
 ## Contributors
 
-See [https://github.com/svenfuchs/rails-i18n/contributors](https://github.com/svenfuchs/rails-i18n/contributors)
+See [https://github.com/estadamx/rails-i18n/contributors](https://github.com/estadamx/rails-i18n/contributors)
 
-## Special thanks
-
-[Tsutomu Kuroda](https://github.com/kuroda) for untiringly taking care of this repository, issues and pull requests
